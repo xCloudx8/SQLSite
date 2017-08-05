@@ -6,36 +6,33 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
 
-  <!-- Wide card with share menu button -->
-  <style>
-  .demo-card-wide.mdl-card {
-    width: 512px;
-    margin-left: 1350px;
-    margin-top: 50px;
-    position: absolute;
-
-  }
-  .demo-card-wide > .mdl-card__title {
-    color: #fff;
-    height: 176px;
-    background: url('http://icons.iconarchive.com/icons/graphicloads/medical-health/256/dna-icon.png') center / cover;
-
-  }
-  .demo-card-wide > .mdl-card__menu {
-    color: #fff;
-  }
-</style>
-
   <!-- Always shows a header, even in smaller screens. -->
   <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
     <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Home</span>
+        <span class="mdl-layout-title">Frequently asked questions</span>
         <div class="mdl-layout-spacer"></div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+          <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
+            <i class="material-icons">search</i>
+          </label>
+          <div class="mdl-textfield__expandable-holder">
+            <input class="mdl-textfield__input" type="text" id="search">
+            <label class="mdl-textfield__label" for="search">Enter your query...</label>
+          </div>
+        </div>
+        <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
+          <i class="material-icons">more_vert</i>
+        </button>
+        <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
+          <li class="mdl-menu__item">About</li>
+          <li class="mdl-menu__item">Contact</li>
+          <li class="mdl-menu__item">Legal information</li>
+        </ul>
       </div>
     </header>
     <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
-      <span class="mdl-layout-title"><h6>Genomics Database</h6></span>
+      <span class="mdl-layout-title"><h6> Database</h6></span>
       <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
         <a class="mdl-navigation__link" href="http://127.0.0.1/Db_V2/index.html">Home</a>
         <a class="mdl-navigation__link" href="http://127.0.0.1/Db_V2/insert.php">Insert</a>
@@ -46,29 +43,9 @@
       </nav>
     </div>
     <main class="mdl-layout__content">
-      <div class="page-content">
-        content here
-      </div>
+      <div class="page-content"> content here</div>
     </main>
   </div>
 
-  <div class="demo-card-wide mdl-card mdl-shadow--2dp" margin-top="2px">
-    <div class="mdl-card__title">
-      <h2 class="mdl-card__title-text">PG updates</h2>
-    </div>
-    <div class="mdl-card__supporting-text">
-    V 1.0 of DB in material design has been dropped!
-    </div>
-    <div class="mdl-card__actions mdl-card--border">
-      <a href="http://127.0.0.1/PgDb_V2/updates.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-        More info
-      </a>
-    </div>
-    <div class="mdl-card__menu">
-      <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-        <i class="material-icons">share</i>
-      </button>
-    </div>
-  </div>
 
 </html>
